@@ -18,7 +18,7 @@
         accumulator = source_array[0]
       end
       while i < source_array.count
-  yield starting_point += source_array[i]
+  yield accumulator += source_array[i]
         i += 1
       end
       return starting_point
