@@ -1,4 +1,4 @@
-
+require 'pry'
   def map(array)
   negatives = []
   i = 0
@@ -19,6 +19,7 @@
       end
       while i < source_array.count
 accumulator =  yield(accumulator, source_array[i])
+binding.pry
         i += 1
       end
       return accumulator
