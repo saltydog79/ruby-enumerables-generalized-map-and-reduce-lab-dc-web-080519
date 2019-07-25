@@ -19,7 +19,7 @@ require 'pry'
       end
       while i < source_array.count
 accumulator =  yield(accumulator, source_array[i])
-binding.pry
+# binding.pry
         i += 1
       end
       return accumulator
