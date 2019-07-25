@@ -21,5 +21,5 @@
 accumulator =  yield (accumulator, source_array[i])
         i += 1
       end
-      return starting_point
+      return accumulator
     end
