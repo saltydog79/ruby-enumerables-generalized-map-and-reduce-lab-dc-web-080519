@@ -15,7 +15,7 @@ require 'pry'
       if starting_point
         accumulator = starting_point
       else
-        accumulator = source_array[0]
+        accumulator = source_array[1]
       end
       while i < source_array.count
 accumulator =  yield(accumulator, source_array[i])
