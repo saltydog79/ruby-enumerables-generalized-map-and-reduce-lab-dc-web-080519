@@ -11,11 +11,13 @@ require 'pry'
 
 
   def reduce(source_array, starting_point=nil)
-      i = 1
+
       if starting_point
         accumulator = starting_point
+        i = 0
       else
         accumulator = source_array[0]
+        i = 1
       end
       while i < source_array.count
 accumulator =  yield(accumulator, source_array[i])
